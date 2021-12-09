@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Training</title>
+
+    <style>
+        /* Navbar */
+        .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 10px;
+        }
+
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .header a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .header-right {
+            float: right;
+        }
+
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+        }
+
+        /* Image */
+        .header-img {
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+        }
+
+
+        /* Body */
+        p {
+            letter-spacing: normal;
+            margin-bottom: 5rem;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .flex-container>div {}
+
+        /* Headings */
+        .heading-card1 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            height: auto;
+            width: 60%;
+            text-align: left;
+            padding: 5px 5px 5px 5px;
+            word-spacing: normal;
+        }
+
+        .heading-card2 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+            padding: 2px 16px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #666;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+
+        }
+
+        .btn:hover {
+            background-color: darkcyan;
+        }
+
+        .btn:active {
+            background-color: darkcyan;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color: #3e8e41
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="#default" class="logo">SF</a>
+        <a>Training</a>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="btn" type="submit" href="account.html">Create a account</a>
+            <a class="button" type="submit" href="login.html">Log In</a>
+        </div>
+    </div>
+    <div class="header-img">
+        <div>
+            <img src="images/maths.jpg" alt="HTML5 Icon" width="1000" height="300">
+        </div>
+    </div>
+    <div class=" flex-container">
+        <div class="heading-card1">
+            <div class="container">
+                <h1>Github Training</h1>
+                <p>This is a training website that is helping me learn how to use git commands to save any new changes
+                    to my personal github repo</p>
+                <h2>Git Commands:</h2>
+
+                <b>This command will initalizes the repository</b>
+                <br>
+                </br>
+                <li>git init</li>
+                <br>
+                </br>
+                <b>Adding any new or modified files to the index.</b>
+                <br>
+                </br>
+                <li>git add .</li>
+                <br>
+                </br>
+                <b>Use of the -m is <msg> as the commit message.
+                        The double quotations "" after commit -m. Is for commenting the changes to the repo</b>
+                <br>
+                </br>
+                <li>git commit -m ""</li>
+                <br>
+                </br>
+                <b> Updates remote refs along with associated objects that has been added and committed.</b>
+                <li> git push https://github.com/name/project-name.git</li>
+                </ul>
+            </div>
+        </div>
+        <div class="heading-card2">
+            <div class="container">
+                <h1>Features</h1>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Terminal</li>
+                    <li>Github</li>
+                </ul>
+                <br>
+            </div>
+            <h1>Extensions</h1>
+            <ul>
+                <li>Live Server</li>
+                <li>Intelli sense</li>
+                <li>Prettier - Code formatter
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <section>
+            <div class="flex-container">
+                <h1>Repos:</h1>
+                <footer>
+
+                    <p>Author: Sebastian Frampton<br> <b>Date: 09/12/2021</b><br>
+                        <a href="mailto:seb.frampton@gmail.com">seb.frampton@gmail.com</a>
+                    </p>
+
+                </footer>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
